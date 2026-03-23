@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary-fixed-dim": "#ddb7ff",
+              "tertiary-fixed-dim": "#e7c188",
+              "surface": "#fcf9f8",
+              "inverse-surface": "#303030",
+              "on-surface-variant": "#4c4451",
+              "surface-dim": "#dcd9d9",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1b1c1c",
+              "on-secondary-fixed": "#261900",
+              "on-tertiary-container": "#b6945f",
+              "outline-variant": "#cec3d3",
+              "secondary": "#775a19",
+              "on-secondary-container": "#785a1a",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#622599",
+              "on-tertiary-fixed": "#281800",
+              "tertiary-container": "#442d02",
+              "surface-container-high": "#eae7e7",
+              "surface-container-low": "#f6f3f2",
+              "surface-container": "#f0eded",
+              "secondary-container": "#fed488",
+              "surface-variant": "#e4e2e1",
+              "surface-container-highest": "#e4e2e1",
+              "tertiary": "#291900",
+              "on-secondary-fixed-variant": "#5d4201",
+              "inverse-on-surface": "#f3f0ef",
+              "primary-fixed": "#f0dbff",
+              "surface-bright": "#fcf9f8",
+              "tertiary-fixed": "#ffdeae",
+              "on-primary-fixed": "#2c0050",
+              "secondary-fixed": "#ffdea5",
+              "outline": "#7d7483",
+              "error": "#ba1a1a",
+              "primary-container": "#4b0082",
+              "inverse-primary": "#ddb7ff",
+              "surface-tint": "#7b41b3",
+              "background": "#fcf9f8",
+              "secondary-fixed-dim": "#e9c176",
+              "on-primary-container": "#ba7ef4",
+              "primary": "#2e0052",
+              "on-background": "#1b1c1c",
+              "on-error": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#5c4215"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+      .royal-shadow {
+        box-shadow: 0 20px 50px rgba(46, 0, 82, 0.05);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-xl shadow-purple-900/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-purple-900">Miss Royal Elegance</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors font-label uppercase tracking-widest text-xs" href="index.html">Home</a>
+<a class="text-purple-900 font-bold border-b-2 border-yellow-600 pb-1 font-label uppercase tracking-widest text-xs" href="gallery.html">Gallery</a>
+<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors font-label uppercase tracking-widest text-xs" href="apply.html">Apply</a>
+<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors font-label uppercase tracking-widest text-xs" href="sponsors.html">Sponsors</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-purple-900" data-icon="account_circle">account_circle</button>
+<button class="bg-primary-container text-on-primary py-2 px-6 font-label uppercase tracking-widest text-xs rounded-lg hover:opacity-90 transition-all active:scale-95">Apply Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Header -->
+<header class="px-8 md:px-24 py-16 text-center max-w-7xl mx-auto">
+<span class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold mb-4 block">The Hall of Sovereigns</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight">Legacy of Grace</h1>
+<p class="mt-6 text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
+                Celebrating the extraordinary women who have graced our stage and the timeless moments of brilliance that define our heritage.
+            </p>
+</header>
+<!-- Asymmetric Editorial Gallery -->
+<section class="px-8 md:px-12 max-w-[1600px] mx-auto grid grid-cols-12 gap-6 items-end">
+<!-- Large Focus Card -->
+<div class="col-span-12 md:col-span-7 group relative overflow-hidden rounded-xl">
+<img class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Grand crowning moment under stage lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_jafNkka67ZaFVRVu4aP_e7tk8ydQ9O2yQgyxAOV9EYAW3n_uX0WUK8zbhFHd2WBl1Vj0RqBXnWmelU2SN6BCyq5oJw9j8Se5n3w8s5EzxinrI46BjaxWZethQiwxw9bouRcUHRj2Aaiuv5swh4il1bYWjvQTIwAOmcmGivopo54V9V8HQooZgPib5Lq_p0KBKkTXiblmIUkKy6YoM6D1-JQclfRZ6e6pKy6J_mP69cdw-UGPaj7myB_SJG24UNE69pHqUg8-cYUu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-10 left-10 p-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl max-w-sm">
+<span class="font-label text-secondary uppercase tracking-widest text-[10px] block mb-2">The Moment of Coronation</span>
+<h3 class="font-headline text-2xl text-white">Imperial Radiance 2023</h3>
+</div>
+</div>
+<!-- Side Cluster -->
+<div class="col-span-12 md:col-span-5 flex flex-col gap-6">
+<div class="group relative overflow-hidden rounded-xl">
+<img class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant evening gown runway walk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiJEtvQew-LMm1hy3Mq3ia-Ugc4TW5sjcMCSbAvEPoabaYPlbO3gpLzV59G1QaAFpyGROtQJZ-MjekIxC3ZuMsTwnK4tbFSrKoyw34WBtrMcdFp17TtX3Kqdbb5yCIk7vFnrGdO3tZrWTThiiNwYE_uU_dSP4qxMNiY7c4vNS3uHrTu0V8zREXa9dtn4HPATXku2gYg2S8OEQjw_8lFLw7ompKvRlYGg8VTY0HYuuAhCrTzZP2KqHeDGC593ypoq3co94Q9DZ3Ys74"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+<div class="absolute top-6 right-6">
+<span class="bg-white/80 backdrop-blur text-primary px-3 py-1 font-label text-[10px] tracking-widest uppercase rounded-full">Editorial</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col justify-center rounded-xl min-h-[300px]">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="font-headline text-3xl text-primary mb-4 italic">"True elegance is the only beauty that never fades."</h4>
+<p class="font-label text-on-surface-variant uppercase tracking-widest text-[10px]">Audrey Hepburn | Our Inspiration</p>
+</div>
+</div>
+</section>
+<!-- Past Winners Grid: The Royal Spotlight -->
+<section class="mt-32 px-8 md:px-24">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline text-4xl font-bold text-primary">Reigning Lineage</h2>
+<p class="font-body text-on-surface-variant mt-2">The distinguished titleholders of Miss Royal Elegance.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:border-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:border-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Winner 1 -->
+<div class="relative pt-12">
+<div class="relative z-10">
+<img class="w-full aspect-[3/4] object-cover rounded shadow-2xl" data-alt="Portrait of 2023 winner in crown" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI478VqhvlPxvnIqhTFsHIf8kQbLIDC5w4yEZ_D5A8B7syP0udgPdKK5EdRswfHYANjJyhCwem4jKG_A_H6ipVkwwhsu_APQpsqf6m6hMXHB93EZAktokXJ0Y6VkN0j82s9GjecS0KeP1biDc9CU1xy0yrttWrrIwCilLYlmcnoA_Opgp9V0XacFNCTJHMCCIGiGVI1GX3OsLm3DAIJIpAo1_U3WlSIxUS0KF_kHs8UfR0YOiyHqAGe0TCFbDnyTDx67IqF83s4pV0"/>
+</div>
+<!-- Royal Spotlight Overlap -->
+<div class="absolute -top-4 -left-4 md:-left-8 z-20">
+<h3 class="font-headline text-5xl md:text-6xl text-primary font-bold leading-none opacity-20">2023</h3>
+</div>
+<div class="mt-8">
+<h4 class="font-headline text-2xl text-primary">Elena Rodriguez</h4>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-1">Sovereign Excellence</p>
+<hr class="w-12 border-secondary mt-4"/>
+</div>
+</div>
+<!-- Winner 2 -->
+<div class="relative pt-24 md:pt-0">
+<div class="relative z-10">
+<img class="w-full aspect-[3/4] object-cover rounded shadow-2xl" data-alt="Portrait of 2022 winner in gala dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhXehpNEOjWHlWvajZX26dOhFx_RcW9gn7ECj4Ri7KQVUztY53VJdwjWjTBoOMIjkv7IdzrlygWBWNKM18XdsnAqloWf3TaaW3mjJbTDqOqt-i89ILmkOY6NzQvqk-96ynFv3qMoR4w4CEH4223GuI2YB7EzKcC162_ToKYFYqoR-bowKEG_IhwpnKHLmdmdAW_jHcgDGBI7ZCJ0nORxrfDM85VSwawt41SVcf8VsUjmx4rkruiP88s0WwxXY69c_w807gv2yo7f7o"/>
+</div>
+<div class="absolute -top-4 -left-4 md:-left-8 z-20">
+<h3 class="font-headline text-5xl md:text-6xl text-primary font-bold leading-none opacity-20">2022</h3>
+</div>
+<div class="mt-8">
+<h4 class="font-headline text-2xl text-primary">Zinhle Mokoena</h4>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-1">Grace &amp; Purpose</p>
+<hr class="w-12 border-secondary mt-4"/>
+</div>
+</div>
+<!-- Winner 3 -->
+<div class="relative pt-12">
+<div class="relative z-10">
+<img class="w-full aspect-[3/4] object-cover rounded shadow-2xl" data-alt="Portrait of 2021 winner posing elegantly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnpsxyCIJ4nllLbzKY8lMskF6W1lpQXzpen_BwNdeOji1m8a-IiplvfSfM3CpLdV0ErkSP4UBdoTslDUhZZSxUiH_VMQVkS2M55lhCUyEDfUdqa7cX38UK_GhzEX9oabm7agS2-jBqz0abq3wRQsQtiCAir2TjgPy8oj2FmhPjDHvss67XzEtHhULp4tyRNCDkJjsrLfq0lCDhV-L1M5CficWkeSFTgRtLYd2NVdPB3_aV7J353lN-81dbMGukyxXiB5LmGtbmBHJE"/>
+</div>
+<div class="absolute -top-4 -left-4 md:-left-8 z-20">
+<h3 class="font-headline text-5xl md:text-6xl text-primary font-bold leading-none opacity-20">2021</h3>
+</div>
+<div class="mt-8">
+<h4 class="font-headline text-2xl text-primary">Aria Sterling</h4>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-1">Majestic Heritage</p>
+<hr class="w-12 border-secondary mt-4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Reel: Motion Gallery -->
+<section class="mt-32 bg-primary-container py-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/30 to-transparent"></div>
+<div class="px-8 md:px-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center max-w-screen-2xl mx-auto">
+<div class="relative">
+<img class="w-full aspect-video object-cover rounded-xl royal-shadow" data-alt="Cinematic video still of the final pageant show" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwcVf8598FOZRWiQth3z3RnwGMKZOEn9iAI54OuD8BcfRcg-igxui1tBLtZitR2PtixZQ6lHiEE6jmGodcUNTucyIz0s8YdNJEn64oqsBHY7ZrYPKQtEV09qOeQjSPpj7JZp1clm_ch-MByKUpwXnN9wjDXgaABp-YbwhBdpOFzGd24F2evmzH-T5BWMTUQpvUKWqmNk03dbGoF16jL1nwPoSmKD3bBAYStSlQGH2Gbz5ZRQ79a-fnpv6xW1CN_wZ293JMhgX_BGGe"/>
+<button class="absolute inset-0 flex items-center justify-center group">
+<div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="text-on-primary">
+<span class="font-label text-secondary-container uppercase tracking-widest text-xs font-bold block mb-4">The Grand Finale</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">2023 Highlights Reel</h2>
+<p class="text-on-primary-container text-lg leading-relaxed mb-8">
+                        Experience the tension, the glamour, and the emotional climax of the 10th anniversary gala. A night where dreams took flight and legends were born.
+                    </p>
+<button class="flex items-center gap-4 text-secondary-container font-label uppercase tracking-widest text-xs font-bold hover:text-white transition-colors">
+                        View Full Archive
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Capturing Moments -->
+<section class="mt-32 px-8 md:px-24 mb-32 max-w-screen-2xl mx-auto">
+<h2 class="font-headline text-4xl font-bold text-primary mb-12 text-center">Behind the Curtain</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Model getting makeup done backstage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUUJo191djOSblBHChK-mXXAsodGVVBX6MCqOCLkYx1EwS0V_66YhpPZFHrcTJCSm70aOuvOIbKAs6hSMhSBXvGnDRcVEdcKDw7T4coKl1pMpq3nGQZAIXDmQQ_khJQU52fH2XL6HtjS_OducqTTKROjm3tOEPgI9rx0S3_gUafPVXMbZTzpv1QTCg4epQbFeSgxpr4dTyh024Ah8CTJtX33pr0CsGPbBnbJ4UfTTOGQ1P2oqmb-SgRZO5RFa6McivyHFU_xpmZpCX"/>
+<div class="absolute bottom-6 left-6 bg-white/10 backdrop-blur-xl p-6 rounded-lg border border-white/10">
+<p class="font-label text-white uppercase tracking-widest text-[10px]">Backstage Prep</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a sparkling crown" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMaStAhIK31XHdrb2YWY1gpP4DVTqXQul-MMiZiCdiSi1xD-9IBk6-VoIt0HLS4OB6eua4yMPK9wKzMfgvNMzeYjMxB00yudHRD-ABHvWNezuevXnof951UxHcM_pylvb4_lfdnKobcSZQcr90-QG2BitWLLNNEP9j18AMAjsqDyQU_Xj5Pt2jh014wIdYxcuppE1gmS2prC2xa4UdGoEqCU8L1KdtsVbbnwQKOJEn7vKpnhXeSY8p1aLvNKAoYjRVPQE-1f3oDBk4"/>
+</div>
+<div class="group relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Applause from the audience" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGZSdZ25uIRLPdlRqWWDM77TNM6ZZXk_0cQHDwBLiBpwv6czl274YGxi2ewXdmNFkwSY7MhR93WLfsq1COmV3sPkdTKth6ig8D17koc7HbmUCIZEFjjF_d8APu0iUePjp22VvUt9oczkWVeXhbZDkWItfPgl0-5tEIBtkpkJr5_pNBhIA12LYY3saoiJ47Lp2VP7jqYPnK3l3B7XZyAJz70iOpOcmMv672_L42ZoRlL88lA04b8dmmQv179f8WLduW-8lD_nDlbCNH"/>
+</div>
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Champagne celebration with finalists" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBax3cgMmeZ0fyyzslI0bgwNxmxKraImsuhONMYwXsBK-9C3_nAAmd9c10ksY-OKbnT4cpUBGXHSB-J0tGbNdxFkEXa6vwk7QlHONMahyNfCNp6RwSJXxVnG9q6SKIIx4bQ11EfOc2En7Ak2C4MAuiZnVZbhwsV7m2KZBptDR-IYduaZ9p9kOv6n2qcK_L3ILQmpUf8xUwr3dnJDVoKEPoMR_FmvEQdFHD8NRDxGdZnZXzmx5HPuDjwLTY1mVDq48_MYmxcFaPt_JrX"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-purple-950 text-white border-t-0">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-serif text-white">Miss Royal Elegance</div>
+<p class="font-label text-xs uppercase tracking-widest text-slate-300">© 2024 Miss Royal Elegance. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-300 font-label text-sm hover:text-white transition-opacity duration-300" href="#">Privacy Policy</a>
+<a class="text-slate-300 font-label text-sm hover:text-white transition-opacity duration-300" href="#">Terms of Service</a>
+<a class="text-slate-300 font-label text-sm hover:text-white transition-opacity duration-300" href="#">Contact Us</a>
+<a class="text-slate-300 font-label text-sm hover:text-white transition-opacity duration-300" href="#">Press Kit</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-purple-950 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-purple-950 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
