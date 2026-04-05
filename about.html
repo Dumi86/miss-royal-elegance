@@ -1,309 +1,414 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Our Story | Miss Royale Elegance</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Story | Miss Royale Elegance</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "surface": "#fcf9f8",
-                "secondary-fixed-dim": "#e9c176",
-                "on-primary-fixed-variant": "#622599",
-                "secondary": "#775a19",
-                "on-primary-fixed": "#2c0050",
-                "inverse-surface": "#303030",
-                "inverse-primary": "#ddb7ff",
-                "tertiary": "#291900",
-                "on-primary-container": "#ba7ef4",
-                "outline": "#7d7483",
-                "background": "#fcf9f8",
-                "on-tertiary-fixed-variant": "#5c4215",
-                "surface-dim": "#dcd9d9",
-                "on-surface-variant": "#4c4451",
-                "surface-variant": "#e4e2e1",
-                "surface-container-high": "#eae7e7",
-                "surface-bright": "#fcf9f8",
-                "primary-fixed-dim": "#ddb7ff",
-                "on-secondary-container": "#785a1a",
-                "on-secondary": "#ffffff",
-                "secondary-fixed": "#ffdea5",
-                "on-secondary-fixed-variant": "#5d4201",
-                "on-background": "#1b1c1c",
-                "outline-variant": "#cec3d3",
-                "surface-container-lowest": "#ffffff",
-                "surface-container": "#f0eded",
-                "on-secondary-fixed": "#261900",
-                "surface-container-highest": "#e4e2e1",
-                "on-error-container": "#93000a",
-                "error": "#ba1a1a",
-                "tertiary-fixed-dim": "#e7c188",
-                "surface-container-low": "#f6f3f2",
-                "secondary-container": "#fed488",
-                "on-surface": "#1b1c1c",
-                "on-tertiary-container": "#b6945f",
-                "on-error": "#ffffff",
-                "on-tertiary": "#ffffff",
-                "error-container": "#ffdad6",
-                "primary-container": "#4b0082",
-                "primary-fixed": "#f0dbff",
-                "on-tertiary-fixed": "#281800",
-                "on-primary": "#ffffff",
-                "tertiary-container": "#442d02",
-                "surface-tint": "#7b41b3",
-                "tertiary-fixed": "#ffdeae",
-                "primary": "#2e0052",
-                "inverse-on-surface": "#f3f0ef"
-              },
-              fontFamily: {
-                "headline": ["Noto Serif"],
-                "body": ["Manrope"],
-                "label": ["Manrope"]
-              },
-              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#fcf9f8",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-fixed-variant": "#622599",
+                        "secondary": "#775a19",
+                        "on-primary-fixed": "#2c0050",
+                        "inverse-surface": "#303030",
+                        "inverse-primary": "#ddb7ff",
+                        "tertiary": "#291900",
+                        "on-primary-container": "#ba7ef4",
+                        "outline": "#7d7483",
+                        "background": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#5c4215",
+                        "surface-dim": "#dcd9d9",
+                        "on-surface-variant": "#4c4451",
+                        "surface-variant": "#e4e2e1",
+                        "surface-container-high": "#eae7e7",
+                        "surface-bright": "#fcf9f8",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "on-secondary-container": "#785a1a",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdea5",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-background": "#1b1c1c",
+                        "outline-variant": "#cec3d3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0eded",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-highest": "#e4e2e1",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e7c188",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-container": "#fed488",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-container": "#b6945f",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#4b0082",
+                        "primary-fixed": "#f0dbff",
+                        "on-tertiary-fixed": "#281800",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#442d02",
+                        "surface-tint": "#7b41b3",
+                        "tertiary-fixed": "#ffdeae",
+                        "primary": "#2e0052",
+                        "inverse-on-surface": "#f3f0ef"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
             },
-          },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .royale-gradient {
             background: linear-gradient(135deg, #2e0052 0%, #4b0082 100%);
         }
+
         .glass-nav {
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
+
         body {
             background-color: #fcf9f8;
             color: #1b1c1c;
             font-family: 'Manrope', sans-serif;
         }
-        h1, h2, h3, .serif {
+
+        h1,
+        h2,
+        h3,
+        .serif {
             font-family: 'Noto Serif', serif;
         }
     </style>
 </head>
+
 <body class="bg-surface selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-xl shadow-purple-900/5 transition-all duration-300">
-<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-serif italic text-purple-900">Miss Royale Elegance</div>
-<div class="hidden md:flex items-center space-x-12">
-<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs" href="index.html">Home</a>
-<a class="text-purple-900 font-bold border-b-2 border-yellow-600 pb-1 Manrope uppercase tracking-widest text-xs" href="about.html">About</a>
-<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs" href="gallery.html">Gallery</a>
-<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs" href="apply.html">Apply</a>
-<a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs" href="community.html">Community</a>
-</div>
-<div class="flex items-center space-x-6">
-<span class="material-symbols-outlined text-purple-900 cursor-pointer" data-icon="account_circle">account_circle</span>
-<button class="bg-primary/50 cursor-not-allowed royale-gradient text-on-primary px-6 py-2.5 rounded-DEFAULT font-label text-xs uppercase tracking-widest transition-all">
+    <!-- TopAppBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-xl shadow-purple-900/5 transition-all duration-300">
+        <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+            <div class="text-2xl font-serif italic text-purple-900">Miss Royale Elegance</div>
+            <div class="hidden md:flex items-center space-x-12">
+                <a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs"
+                    href="index.html">Home</a>
+                <a class="text-purple-900 font-bold border-b-2 border-yellow-600 pb-1 Manrope uppercase tracking-widest text-xs"
+                    href="about.html">About</a>
+                <a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs"
+                    href="gallery.html">Gallery</a>
+                <a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs"
+                    href="apply.html">Apply</a>
+                <a class="text-slate-600 font-medium hover:text-purple-900 transition-colors Manrope uppercase tracking-widest text-xs"
+                    href="community.html">Community</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <span class="material-symbols-outlined text-purple-900 cursor-pointer"
+                    data-icon="account_circle">account_circle</span>
+                <button
+                    class="bg-primary/50 cursor-not-allowed royale-gradient text-on-primary px-6 py-2.5 rounded-DEFAULT font-label text-xs uppercase tracking-widest transition-all">
                     Applications Closed
                 </button>
-</div>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Miss Royale Elegance Community Impact" class="w-full h-full object-cover" src="content/charity/charity_1.webp"/>
-<div class="absolute inset-0 bg-primary/50 backdrop-brightness-75"></div>
-</div>
-<div class="relative z-10 text-center px-6">
-<span class="text-secondary-fixed-dim font-label uppercase tracking-[0.3em] text-sm mb-4 block">Miss Royale Elegance</span>
-<h1 class="text-white text-6xl md:text-8xl font-headline font-bold mb-6 italic">Our Story</h1>
-<div class="w-24 h-1 bg-secondary mx-auto"></div>
-</div>
-</section>
-<!-- Mission & Vision: High-Impact Editorial -->
-<section class="py-24 md:py-32 px-8 max-w-screen-2xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-<div class="md:col-span-7">
-<h2 class="text-primary text-4xl md:text-6xl font-headline leading-tight mb-8">
-                        Empowering South African women through the <span class="italic text-secondary">legacy of grace</span> and heritage.
+            </div>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Miss Royale Elegance Community Impact" class="w-full h-full object-cover"
+                    src="content/charity/charity_1.webp" />
+                <div class="absolute inset-0 bg-primary/50 backdrop-brightness-75"></div>
+            </div>
+            <div class="relative z-10 text-center px-6">
+                <span class="text-secondary-fixed-dim font-label uppercase tracking-[0.3em] text-sm mb-4 block">Miss
+                    Royale elegance</span>
+                <h1 class="text-white text-6xl md:text-8xl font-headline font-bold mb-6 italic">Our Story</h1>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+        </section>
+        <!-- Mission & Vision: High-Impact Editorial -->
+        <section class="py-24 md:py-32 px-8 max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-7">
+                    <h2 class="text-primary text-4xl md:text-6xl font-headline leading-tight mb-8">
+                        Empowering South African women through the <span class="italic text-secondary">legacy of
+                            grace</span> and heritage.
                     </h2>
-<p class="text-on-surface-variant font-body text-lg leading-relaxed max-w-2xl mb-12">
-                        Miss Royale Elegance is more than a pageant; it is a movement dedicated to the elevation of the modern woman. We believe that true power lies in the intersection of cultural identity and professional excellence.
+                    <p class="text-on-surface-variant font-body text-lg leading-relaxed max-w-2xl mb-12">
+                        Miss Royale Elegance is more than a pageant; it is a movement dedicated to the elevation of the
+                        modern woman. We believe that true power lies in the intersection of cultural identity and
+                        professional excellence.
                     </p>
-<div class="flex gap-12 border-t border-outline-variant/30 pt-12">
-<div>
-<span class="block font-label text-secondary font-bold uppercase tracking-widest text-xs mb-4">Our Mission</span>
-<p class="font-body text-sm leading-relaxed text-on-surface-variant">To create a premier platform that celebrates the multifaceted brilliance of South African heritage and empowers young women to lead.</p>
-</div>
-<div>
-<span class="block font-label text-secondary font-bold uppercase tracking-widest text-xs mb-4">Our Vision</span>
-<p class="font-body text-sm leading-relaxed text-on-surface-variant">Defining the gold standard for pageantry through ethics, cultural preservation, social leadership, and NGO partnerships.</p>
-</div>
-</div>
-</div>
-<div class="md:col-span-5 relative">
-<div class="aspect-[4/5] bg-surface-container-low rounded-DEFAULT overflow-hidden shadow-2xl shadow-primary/10">
-<img alt="Miss Royale Elegance Ambassadors - The 1st Annual Crowning" class="w-full h-full object-cover hover:scale-105 transition-all duration-700" src="content/ambassadors/crown_moment_1.webp"/>
-</div>
-<!-- Asymmetric Floating Element -->
-<div class="absolute -bottom-10 -left-10 bg-white p-8 shadow-xl max-w-[280px] hidden md:block">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
-<p class="text-primary font-headline italic text-xl">"Elegance is not about being noticed, it's about being remembered."</p>
-</div>
-</div>
-</div>
-</section>
-<!-- The Foundation: Tonal Layering Section -->
-<section class="bg-surface-container-low py-24 md:py-32 px-8">
-<div class="max-w-4xl mx-auto text-center mb-20">
-<span class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold block mb-4">Legacy &amp; Roots</span>
-<h2 class="text-primary text-4xl font-headline mb-6">The royale Foundation</h2>
-<p class="text-on-surface-variant font-body leading-loose">
-                    Born from a vision to celebrate authentic South African womanhood, Miss Royale Elegance celebrated its Official Sash Ceremony on 22 March 2026. What began as a movement has become a beacon of prestige - a platform where grace, community, and culture converge.
+                    <div class="flex gap-12 border-t border-outline-variant/30 pt-12">
+                        <div>
+                            <span
+                                class="block font-label text-secondary font-bold uppercase tracking-widest text-xs mb-4">Our
+                                Mission</span>
+                            <p class="font-body text-sm leading-relaxed text-on-surface-variant">To create a premier
+                                platform that celebrates the multifaceted brilliance of South African heritage and
+                                empowers young women to lead.</p>
+                        </div>
+                        <div>
+                            <span
+                                class="block font-label text-secondary font-bold uppercase tracking-widest text-xs mb-4">Our
+                                Vision</span>
+                            <p class="font-body text-sm leading-relaxed text-on-surface-variant">Defining the gold
+                                standard for pageantry through ethics, cultural preservation, social leadership, and NGO
+                                partnerships.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-5 relative">
+                    <div
+                        class="aspect-[4/5] bg-surface-container-low rounded-DEFAULT overflow-hidden shadow-2xl shadow-primary/10">
+                        <img alt="Miss Royale Elegance Ambassadors - The 1st Annual Crowning"
+                            class="w-full h-full object-cover hover:scale-105 transition-all duration-700"
+                            src="content/ambassadors/crown_moment_1.webp" />
+                    </div>
+                    <!-- Asymmetric Floating Element -->
+                    <div class="absolute -bottom-10 -left-10 bg-white p-8 shadow-xl max-w-[280px] hidden md:block">
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-4"
+                            data-icon="auto_awesome">auto_awesome</span>
+                        <p class="text-primary font-headline italic text-xl">"Elegance is not about being noticed, it's
+                            about being remembered."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Foundation: Tonal Layering Section -->
+        <section class="bg-surface-container-low py-24 md:py-32 px-8">
+            <div class="max-w-4xl mx-auto text-center mb-20">
+                <span class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold block mb-4">Legacy
+                    &amp; Roots</span>
+                <h2 class="text-primary text-4xl font-headline mb-6">The royale Foundation</h2>
+                <p class="text-on-surface-variant font-body leading-loose">
+                    Born from a vision to celebrate authentic South African womanhood, Miss Royale Elegance celebrated
+                    its Official Sash Ceremony on 22 March 2026. What began as a movement has become a beacon of
+                    prestige - a platform where grace, community, and culture converge.
                 </p>
-</div>
-<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 px-4">
-<div class="relative group aspect-square overflow-hidden">
-<img alt="1st Annual Sash Ceremony" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="content/ceremony/ceremony_1.webp"/>
-<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors"></div>
-</div>
-<div class="relative group aspect-square overflow-hidden mt-12 md:mt-24">
-<img alt="Ambassadors at the Ceremony" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="content/ceremony/ceremony_5.webp"/>
-<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors"></div>
-</div>
-<div class="relative group aspect-square overflow-hidden">
-<img alt="Sash Ceremony Crowning Moment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="content/ceremony/ceremony_9.webp"/>
-<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors"></div>
-</div>
-</div>
-</section>
-<!-- Leadership: "The royale Spotlight" Grid -->
-<section class="py-24 md:py-32 px-8 max-w-screen-2xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div>
-<span class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold block mb-4">Architects of Excellence</span>
-<h2 class="text-primary text-5xl font-headline italic">Meet the Visionaries</h2>
-</div>
-<p class="text-on-surface-variant font-body max-w-sm">The founder and the extraordinary women chosen as the faces of the 1st Annual Miss Royale Elegance Crowning.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-<!-- Founder – Ofentse Ramaboya -->
-<div class="group lg:col-span-1">
-<div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
-<img alt="Ofentse Ramaboya – Founder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="content/founders/ofentse_ramaboya.jpg"/>
-</div>
-<div class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
-<h3 class="text-primary font-headline text-xl mb-1">Ofentse Ramaboya</h3>
-<p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Founder &amp; Executive Director</p>
-<p class="text-on-surface-variant text-xs leading-relaxed font-body">The visionary behind Miss Royale Elegance — dedicated to celebrating authentic South African womanhood and cultural heritage.</p>
-</div>
-</div>
-<!-- Ambassador – Lunga Langa -->
-<div class="group pt-12 lg:pt-0">
-<div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
-<img alt="Lunga Langa – Miss Royale Elegance Ambassador" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="content/ambassadors/lunga_langa_1.webp"/>
-</div>
-<div class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
-<h3 class="text-primary font-headline text-xl mb-1">Lunga Langa</h3>
-<p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss Royale Elegance · Ambassador</p>
-<p class="text-on-surface-variant text-xs leading-relaxed font-body">Chosen as a face of the 1st Annual Crowning, Lunga embodies the grace and leadership at the heart of Miss Royale Elegance.</p>
-</div>
-</div>
-<!-- Ambassador – Tintswalo Sibuyi -->
-<div class="group pt-24 lg:pt-0">
-<div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
-<img alt="Tintswalo Sibuyi – Miss Royale Elegance Ambassador" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="content/ambassadors/tintswalo_sibuyi_1.webp"/>
-</div>
-<div class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
-<h3 class="text-primary font-headline text-xl mb-1">Tintswalo Sibuyi</h3>
-<p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss Royale Elegance · Ambassador</p>
-<p class="text-on-surface-variant text-xs leading-relaxed font-body">A pageantry trailblazer representing the sovereign spirit of Miss Royale Elegance at the inaugural crowning ceremony.</p>
-</div>
-</div>
-<!-- Teen Ambassador – Dorothy Matlala -->
-<div class="group pt-12 lg:pt-0">
-<div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
-<img alt="Dorothy Matlala – Miss Teen royale Elegance Ambassador" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="content/ambassadors/dorothy_matlala_1.webp"/>
-</div>
-<div class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
-<h3 class="text-primary font-headline text-xl mb-1">Dorothy Matlala</h3>
-<p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss Teen royale Elegance · Ambassador</p>
-<p class="text-on-surface-variant text-xs leading-relaxed font-body">Chosen to represent the next generation of South African leaders, Dorothy carries the torch for young women across the nation.</p>
-</div>
-</div>
-<!-- Teen Ambassador – Mandisa Mohlala -->
-<div class="group pt-24 lg:pt-0">
-<div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
-<img alt="Mandisa Mohlala – Miss Teen royale Elegance Ambassador" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="content/ambassadors/mandisa_mohlala_1.webp"/>
-</div>
-<div class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
-<h3 class="text-primary font-headline text-xl mb-1">Mandisa Mohlala</h3>
-<p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss Teen royale Elegance · Ambassador</p>
-<p class="text-on-surface-variant text-xs leading-relaxed font-body">A rising voice in youth leadership, Mandisa brings energy, purpose, and vision to the Miss Royale Elegance platform.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Cultural Impact Section -->
-<section class="bg-primary-container text-white py-24 md:py-32 overflow-hidden relative">
-<div class="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 skew-x-[-15deg] translate-x-1/4"></div>
-<div class="max-w-screen-xl mx-auto px-8 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div>
-<span class="font-label text-secondary-fixed-dim uppercase tracking-widest text-xs font-bold block mb-6">Beyond the Crown</span>
-<h2 class="text-white text-5xl font-headline mb-8 italic">Community, Culture &amp; Responsibility</h2>
-<p class="text-white/80 font-body text-lg mb-8">
-                            We take our role as cultural custodians seriously. Through our partnerships — including the Vision Academy NGO — we support education, mentorship, and community upliftment that ensures South Africa's diverse heritage continues to flourish.
+            </div>
+            <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 px-4">
+                <div class="relative group aspect-square overflow-hidden">
+                    <img alt="1st Annual Sash Ceremony"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="content/ceremony/ceremony_1.webp" />
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors"></div>
+                </div>
+                <div class="relative group aspect-square overflow-hidden mt-12 md:mt-24">
+                    <img alt="Ambassadors at the Ceremony"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="content/ceremony/ceremony_5.webp" />
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors"></div>
+                </div>
+                <div class="relative group aspect-square overflow-hidden">
+                    <img alt="Sash Ceremony Crowning Moment"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="content/ceremony/ceremony_9.webp" />
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Leadership: "The royale Spotlight" Grid -->
+        <section class="py-24 md:py-32 px-8 max-w-screen-2xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <span
+                        class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold block mb-4">Architects
+                        of Excellence</span>
+                    <h2 class="text-primary text-5xl font-headline italic">Meet the Visionaries</h2>
+                </div>
+                <p class="text-on-surface-variant font-body max-w-sm">The founder and the extraordinary women chosen as
+                    the faces of the 1st Annual Miss Royale Elegance Crowning.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Founder – Ofentse Ramaboya -->
+                <div class="group lg:col-span-1">
+                    <div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
+                        <img alt="Ofentse Ramaboya – Founder"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            src="content/founders/ofentse_ramaboya.jpg" />
+                    </div>
+                    <div
+                        class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-primary font-headline text-xl mb-1">Ofentse Ramaboya</h3>
+                        <p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">
+                            Founder &amp; Executive Director</p>
+                        <p class="text-on-surface-variant text-xs leading-relaxed font-body">The visionary behind Miss
+                            Royale Elegance — dedicated to celebrating authentic South African womanhood and cultural
+                            heritage.</p>
+                    </div>
+                </div>
+                <!-- Ambassador – Lunga Langa -->
+                <div class="group pt-12 lg:pt-0">
+                    <div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
+                        <img alt="Lunga Langa – Miss Royale Elegance Ambassador"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            src="content/ambassadors/lunga_langa_1.webp" />
+                    </div>
+                    <div
+                        class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-primary font-headline text-xl mb-1">Lunga Langa</h3>
+                        <p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss
+                            Royale Elegance · Ambassador</p>
+                        <p class="text-on-surface-variant text-xs leading-relaxed font-body">Chosen as a face of the 1st
+                            Annual Crowning, Lunga embodies the grace and leadership at the heart of Miss Royale
+                            Elegance.</p>
+                    </div>
+                </div>
+                <!-- Ambassador – Tintswalo Sibuyi -->
+                <div class="group pt-24 lg:pt-0">
+                    <div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
+                        <img alt="Tintswalo Sibuyi – Miss Royale Elegance Ambassador"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            src="content/ambassadors/tintswalo_sibuyi_1.webp" />
+                    </div>
+                    <div
+                        class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-primary font-headline text-xl mb-1">Tintswalo Sibuyi</h3>
+                        <p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss
+                            Royale Elegance · Ambassador</p>
+                        <p class="text-on-surface-variant text-xs leading-relaxed font-body">A pageantry trailblazer
+                            representing the sovereign spirit of Miss Royale Elegance at the inaugural crowning
+                            ceremony.</p>
+                    </div>
+                </div>
+                <!-- Teen Ambassador – Dorothy Matlala -->
+                <div class="group pt-12 lg:pt-0">
+                    <div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
+                        <img alt="Dorothy Matlala – Miss Teen royale Elegance Ambassador"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            src="content/ambassadors/dorothy_matlala_1.webp" />
+                    </div>
+                    <div
+                        class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-primary font-headline text-xl mb-1">Dorothy Matlala</h3>
+                        <p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss
+                            Teen royale Elegance · Ambassador</p>
+                        <p class="text-on-surface-variant text-xs leading-relaxed font-body">Chosen to represent the
+                            next generation of South African leaders, Dorothy carries the torch for young women across
+                            the nation.</p>
+                    </div>
+                </div>
+                <!-- Teen Ambassador – Mandisa Mohlala -->
+                <div class="group pt-24 lg:pt-0">
+                    <div class="aspect-[3/4] mb-6 overflow-hidden rounded-DEFAULT bg-surface-container-highest">
+                        <img alt="Mandisa Mohlala – Miss Teen royale Elegance Ambassador"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            src="content/ambassadors/mandisa_mohlala_1.webp" />
+                    </div>
+                    <div
+                        class="relative -mt-16 mx-4 bg-white p-6 shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-primary font-headline text-xl mb-1">Mandisa Mohlala</h3>
+                        <p class="text-secondary font-label text-[10px] uppercase tracking-widest font-bold mb-4">Miss
+                            Teen royale Elegance · Ambassador</p>
+                        <p class="text-on-surface-variant text-xs leading-relaxed font-body">A rising voice in youth
+                            leadership, Mandisa brings energy, purpose, and vision to the Miss Royale Elegance platform.
                         </p>
-<ul class="space-y-4">
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
-<span class="font-body text-sm font-medium">Vision Academy NGO Partnership — empowering youth through education</span>
-</li>
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
-<span class="font-body text-sm font-medium">Charity outreach and community service initiatives</span>
-</li>
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
-<span class="font-body text-sm font-medium">Leadership mentorship for all ambassadors and semi-finalists</span>
-</li>
-</ul>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<img alt="Vision Academy NGO Partnership" class="rounded-DEFAULT shadow-xl w-full h-48 object-cover" src="content/ngo/ngo_1.jpg"/>
-<img alt="Vision Academy Community Outreach" class="rounded-DEFAULT shadow-xl mt-12 w-full h-48 object-cover" src="content/ngo/ngo_3.jpg"/>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-purple-950 text-white w-full">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8 max-w-screen-2xl mx-auto">
-<div class="flex flex-col items-center md:items-start">
-<div class="text-xl font-serif text-white mb-4">Miss Royale Elegance</div>
-<p class="text-slate-400 font-body text-sm text-center md:text-left">Elevating the standards of heritage and grace.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-10">
-<a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
-<a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest" href="#">Terms of Service</a>
-<a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest" href="#">Contact Us</a>
-<a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest" href="#">Press Kit</a>
-</div>
-<div class="flex gap-6">
-<span class="material-symbols-outlined text-yellow-500 cursor-pointer" data-icon="share">share</span>
-<span class="material-symbols-outlined text-yellow-500 cursor-pointer" data-icon="public">public</span>
-<span class="material-symbols-outlined text-yellow-500 cursor-pointer" data-icon="mail">mail</span>
-</div>
-</div>
-<div class="border-t border-white/10 px-12 py-8 text-center md:text-left text-xs text-slate-500 font-label uppercase tracking-widest max-w-screen-2xl mx-auto">
-        © 2026 Miss Royale Elegance. All Rights Reserved.
-    </div>
-</footer>
-</body></html>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cultural Impact Section -->
+        <section class="bg-primary-container text-white py-24 md:py-32 overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 skew-x-[-15deg] translate-x-1/4"></div>
+            <div class="max-w-screen-xl mx-auto px-8 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span
+                            class="font-label text-secondary-fixed-dim uppercase tracking-widest text-xs font-bold block mb-6">Beyond
+                            the Crown</span>
+                        <h2 class="text-white text-5xl font-headline mb-8 italic">Community, Culture &amp;
+                            Responsibility</h2>
+                        <p class="text-white/80 font-body text-lg mb-8">
+                            We take our role as cultural custodians seriously. Through our partnerships — including the
+                            Vision Academy NGO — we support education, mentorship, and community upliftment that ensures
+                            South Africa's diverse heritage continues to flourish.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-secondary"
+                                    data-icon="verified">verified</span>
+                                <span class="font-body text-sm font-medium">Vision Academy NGO Partnership — empowering
+                                    youth through education</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-secondary"
+                                    data-icon="verified">verified</span>
+                                <span class="font-body text-sm font-medium">Charity outreach and community service
+                                    initiatives</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-secondary"
+                                    data-icon="verified">verified</span>
+                                <span class="font-body text-sm font-medium">Leadership mentorship for all ambassadors
+                                    and semi-finalists</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img alt="Vision Academy NGO Partnership"
+                            class="rounded-DEFAULT shadow-xl w-full h-48 object-cover" src="content/ngo/ngo_1.jpg" />
+                        <img alt="Vision Academy Community Outreach"
+                            class="rounded-DEFAULT shadow-xl mt-12 w-full h-48 object-cover"
+                            src="content/ngo/ngo_3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-purple-950 text-white w-full">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8 max-w-screen-2xl mx-auto">
+            <div class="flex flex-col items-center md:items-start">
+                <div class="text-xl font-serif text-white mb-4">Miss Royale Elegance</div>
+                <p class="text-slate-400 font-body text-sm text-center md:text-left">Elevating the standards of heritage
+                    and grace.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-10">
+                <a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest"
+                    href="#">Terms of Service</a>
+                <a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest"
+                    href="#">Contact Us</a>
+                <a class="text-slate-300 hover:text-white transition-opacity duration-300 font-label text-xs uppercase tracking-widest"
+                    href="#">Press Kit</a>
+            </div>
+            <div class="flex gap-6">
+                <span class="material-symbols-outlined text-yellow-500 cursor-pointer" data-icon="share">share</span>
+                <span class="material-symbols-outlined text-yellow-500 cursor-pointer" data-icon="public">public</span>
+                <span class="material-symbols-outlined text-yellow-500 cursor-pointer" data-icon="mail">mail</span>
+            </div>
+        </div>
+        <div
+            class="border-t border-white/10 px-12 py-8 text-center md:text-left text-xs text-slate-500 font-label uppercase tracking-widest max-w-screen-2xl mx-auto">
+            © 2026 Miss Royale Elegance. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
