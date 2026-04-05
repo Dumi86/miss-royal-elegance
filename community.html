@@ -94,8 +94,23 @@
 <a class="font-label uppercase tracking-widest text-xs text-purple-900 font-bold border-b-2 border-yellow-600 pb-1" href="community.html">Community</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="bg-primary/50 cursor-not-allowed text-on-primary px-6 py-2 rounded-lg font-label uppercase tracking-widest text-xs transition-all">Applications Closed</button>
-<span class="material-symbols-outlined text-purple-900 cursor-pointer" data-icon="account_circle">account_circle</span>
+<button class="material-symbols-outlined text-purple-900 text-2xl lg:hidden" id="mobile-menu-trigger" data-icon="menu">menu</button>
+<button class="material-symbols-outlined text-purple-900 text-2xl hidden lg:block" data-icon="account_circle">account_circle</button>
+<button class="bg-primary/50 cursor-not-allowed text-on-primary px-6 py-2 rounded-lg font-label uppercase tracking-widest text-xs transition-all">
+                    Applications Closed
+                </button>
+</div>
+</div>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 z-[60] bg-primary/95 lg:hidden opacity-0 transition-opacity pointer-events-none duration-300" id="mobile-menu-overlay">
+<div class="flex flex-col items-center justify-center h-full gap-8">
+<button class="absolute top-8 right-8 text-white material-symbols-outlined text-3xl" id="mobile-menu-close" data-icon="close">close</button>
+<a class="text-white font-serif italic text-3xl mb-8" href="index.html">Miss Royale Elegance</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="index.html">Home</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="about.html">About</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="gallery.html">Gallery</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="apply.html">Apply</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="community.html">Community</a>
 </div>
 </div>
 </nav>
@@ -118,7 +133,7 @@
 <div class="lg:col-span-7 relative group">
 <div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary-fixed-dim/20 rounded-full blur-3xl group-hover:bg-secondary-fixed-dim/40 transition-all"></div>
 <div class="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
-<img alt="Vision Academy NGO Partnership" class="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700" src="content/ngo/ngo_1.jpg"/>
+<img alt="Vision Academy NGO Partnership" class="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700" src="content/ngo/ngo_1.webp"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
 <div class="absolute bottom-8 left-8">
 <span class="bg-secondary text-white px-4 py-1 rounded-full text-[10px] font-label uppercase tracking-widest mb-2 inline-block">NGO Partner</span>
@@ -252,7 +267,7 @@ Leadership seminars for young women
 <div class="grid grid-cols-2 gap-4">
 <div class="space-y-4 pt-12">
 <div class="aspect-[3/4] rounded-lg overflow-hidden border border-white/10 shadow-xl">
-<img alt="Community engagement" class="w-full h-full object-cover" src="content/ngo/ngo_3.jpg"/>
+<img alt="Community engagement" class="w-full h-full object-cover" src="content/ngo/ngo_3.webp"/>
 </div>
 <div class="aspect-square rounded-lg overflow-hidden border border-white/10 shadow-xl">
 <img alt="Charity work" class="w-full h-full object-cover" src="content/charity/charity_2.webp"/>
@@ -263,7 +278,7 @@ Leadership seminars for young women
 <img alt="Joyful moments" class="w-full h-full object-cover" src="content/charity/charity_4.webp"/>
 </div>
 <div class="aspect-[3/4] rounded-lg overflow-hidden border border-white/10 shadow-xl">
-<img alt="Vision Academy outreach" class="w-full h-full object-cover" src="content/ngo/ngo_1.jpg"/>
+<img alt="Vision Academy outreach" class="w-full h-full object-cover" src="content/ngo/ngo_1.webp"/>
 </div>
 </div>
 </div>
@@ -298,4 +313,21 @@ Leadership seminars for young women
 </div>
 </div>
 </footer>
+<script>
+    const trigger = document.getElementById('mobile-menu-trigger');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const closeBtn = document.getElementById('mobile-menu-close');
+
+    if (trigger && overlay && closeBtn) {
+        trigger.addEventListener('click', () => {
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            overlay.classList.add('opacity-100');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            overlay.classList.remove('opacity-100');
+        });
+    }
+</script>
 </body></html>
