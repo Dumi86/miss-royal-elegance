@@ -101,10 +101,23 @@
 <a class="text-slate-600 font-medium hover:text-purple-900 transition-colors font-label uppercase tracking-widest text-xs" href="community.html">Community</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="material-symbols-outlined text-purple-900 text-2xl" data-icon="account_circle">account_circle</button>
+<button class="material-symbols-outlined text-purple-900 text-2xl lg:hidden" id="mobile-menu-trigger" data-icon="menu">menu</button>
+<button class="material-symbols-outlined text-purple-900 text-2xl hidden lg:block" data-icon="account_circle">account_circle</button>
 <button class="bg-primary/50 cursor-not-allowed text-on-primary px-6 py-2 rounded-lg font-label uppercase tracking-widest text-xs transition-all">
                     Applications Closed
                 </button>
+</div>
+</div>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 z-[60] bg-primary/95 lg:hidden opacity-0 transition-opacity pointer-events-none duration-300" id="mobile-menu-overlay">
+<div class="flex flex-col items-center justify-center h-full gap-8">
+<button class="absolute top-8 right-8 text-white material-symbols-outlined text-3xl" id="mobile-menu-close" data-icon="close">close</button>
+<a class="text-white font-serif italic text-3xl mb-8" href="index.html">Miss Royale Elegance</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="index.html">Home</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="about.html">About</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="gallery.html">Gallery</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="apply.html">Apply</a>
+<a class="text-white font-label uppercase tracking-widest text-lg" href="community.html">Community</a>
 </div>
 </div>
 </nav>
@@ -164,12 +177,12 @@
 </div>
 <div class="mt-12 grid grid-cols-2 gap-8 border-t border-outline-variant/30 pt-12">
 <div>
-<span class="font-headline text-4xl text-secondary block mb-2">15+</span>
-<span class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Years of Heritage</span>
+<span class="font-headline text-4xl text-secondary block mb-2">2026</span>
+<span class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Inaugural Season</span>
 </div>
 <div>
-<span class="font-headline text-4xl text-secondary block mb-2">R2M+</span>
-<span class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Community Impact</span>
+<span class="font-headline text-4xl text-secondary block mb-2">Prestige</span>
+<span class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Cultural Heritage</span>
 </div>
 </div>
 </div>
@@ -275,4 +288,19 @@
 <p class="text-slate-500 text-[10px] font-label uppercase tracking-widest">© 2024 Miss Royale Elegance. All Rights Reserved.</p>
 </div>
 </footer>
+<script>
+    const trigger = document.getElementById('mobile-menu-trigger');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const closeBtn = document.getElementById('mobile-menu-close');
+
+    trigger.addEventListener('click', () => {
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+        overlay.classList.add('opacity-100');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+        overlay.classList.remove('opacity-100');
+    });
+</script>
 </body></html>
